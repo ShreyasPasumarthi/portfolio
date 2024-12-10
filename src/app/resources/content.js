@@ -13,7 +13,7 @@ const person = {
 }
 
 const newsletter = {
-    display: true,
+    display: false,
     title: <>Subscribe to {person.firstName}'s Newsletter</>,
     description: <>I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering.</>
 }
@@ -47,7 +47,7 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Software engineer and builder</>,
+    headline: <>Shreyas Pasumarthi: Software engineer and builder</>,
     subline: <>I'm Shreyas, a recent <InlineCode>UC San Diego</InlineCode> graduate, where I studied<br/> Mathematics-Computer Science. After hours, I build my own projects.</>
 }
 
