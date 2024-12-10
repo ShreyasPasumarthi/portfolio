@@ -1,15 +1,15 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-    firstName: 'Shreyas',
-    lastName:  'Pasumarthi',
+    firstName: 'Selene',
+    lastName:  'Yu',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Software Engineer',
+    role:      'Design Engineer',
     avatar:    '/images/avatar.jpg',
-    location:  'San Diego, CA',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: []  // optional: Leave the array empty if you don't want to display languages
+    location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
 }
 
 const newsletter = {
@@ -24,7 +24,7 @@ const social = [
     {
         name: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/ShreyasPasumarthi',
+        link: 'https://github.com/once-ui-system/nextjs-starter',
     },
     {
         name: 'LinkedIn',
@@ -39,7 +39,7 @@ const social = [
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:shreyaspasumarthi@gmail.com',
+        link: 'mailto:example@gmail.com',
     },
 ]
 
@@ -47,8 +47,8 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Software engineer and builder</>,
-    subline: <>I'm Shreyas, a recent <InlineCode>UCSD</InlineCode> grad, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    headline: <>Design engineer and builder</>,
+    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
 }
 
 const about = {
@@ -69,16 +69,16 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Shreyas is a San Diego-based software engineer with a passion for transforming complex challenges into simple, elegant design solutions. His work spans data science, software engineering, and machine learning.</>
+        description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
     },
     work: {
         display: true, // set to false to hide this section
         title: 'Work Experience',
         experiences: [
             {
-                company: 'NASA Jet Propulsion Laboratory',
-                timeframe: 'June 2023 - Sep 2024',
-                role: 'Software Engineer Intern',
+                company: 'FLY',
+                timeframe: '2022 - Present',
+                role: 'Senior Design Engineer',
                 achievements: [
                     <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
                     <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
@@ -109,8 +109,12 @@ const about = {
         title: 'Studies',
         institutions: [
             {
-                name: 'University of California, San Diego',
-                description: <>Studied mathematics and computer science.</>,
+                name: 'University of Jakarta',
+                description: <>Studied software engineering.</>,
+            },
+            {
+                name: 'Build the Future',
+                description: <>Studied online marketing and personal branding.</>,
             }
         ]
     },
