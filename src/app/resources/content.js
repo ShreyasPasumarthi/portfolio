@@ -6,7 +6,7 @@ const person = {
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Design Engineer',
+    role:      'Software Engineer',
     avatar:    '/images/profiletriton.jpg',
     location:  'US/Pacific',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
     languages: ['English']  // optional: Leave the array empty if you don't want to display languages
@@ -47,8 +47,8 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    headline: <>Software engineer and builder</>,
+    subline: <>I'm Shreyas, a recent <InlineCode>UC San Diego</InlineCode> graduate, where I studied<br/> Mathematics-Computer experiences. After hours, I build my own projects.</>
 }
 
 const about = {
@@ -63,13 +63,13 @@ const about = {
         display: true
     },
     calendar: {
-        display: true,
+        display: false,
         link: 'https://cal.com'
     },
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Shreyas is a software engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        description: <>Shreyas is a software engineer with a passion for building products. His work spans machine learning, autonomous systems, and software engineering.</>
     },
     work: {
         display: true, // set to false to hide this section
@@ -77,8 +77,8 @@ const about = {
         experiences: [
             {
                 company: 'NASA Jet Propulsion Laboratory',
-                timeframe: '2022 - Present',
-                role: 'Senior Design Engineer',
+                timeframe: '2024 - 2024',
+                role: 'Autonomy Simulation Software Engineer Intern',
                 achievements: [
                     <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
                     <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
@@ -91,16 +91,6 @@ const about = {
                         height: 9
                     }
                 ]
-            },
-            {
-                company: 'Creativ3',
-                timeframe: '2018 - 2022',
-                role: 'Lead Designer',
-                achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
-                ],
-                images: [ ]
             }
         ]
     },
