@@ -31,7 +31,7 @@ const effects = {
     },
     dots: {
         display: true,
-        opacity: 0.4,           // 0 - 1
+        opacity: 0.7,           // 0 - 1
         size: '24'              // 2 | 4 | 8 | 12 | 16 | 20 | 24 | 32 | 40 | 48 | 56 | 634
     },
     lines: {
