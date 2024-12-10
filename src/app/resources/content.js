@@ -48,7 +48,7 @@ const home = {
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
     headline: <>Software engineer and builder</>,
-    subline: <>I'm Shreyas, a recent <InlineCode>UC San Diego</InlineCode> graduate, where I studied<br/> Mathematics-Computer experiences. After hours, I build my own projects.</>
+    subline: <>I'm Shreyas, a recent <InlineCode>UC San Diego</InlineCode> graduate, where I studied<br/> Mathematics-Computer Science. After hours, I build my own projects.</>
 }
 
 const about = {
@@ -77,11 +77,11 @@ const about = {
         experiences: [
             {
                 company: 'NASA Jet Propulsion Laboratory',
-                timeframe: '2024 - 2024',
+                timeframe: 'June 2024 - September 2024',
                 role: 'Autonomy Simulation Software Engineer Intern',
                 achievements: [
-                    <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                    <>Cut down simulation runtime by 72.3\% by creating a Python and C++ version of a low-fidelity simulation platform of autonomy algorithms for multi-agent and single-agent robotics missions to asteroids, translating legacy MATLAB code and implementing autonomy algorithms.</>,
+                    <>Wrote test plans, created automated CI/CD unit and integration test pipeline using PyTest and Jenkins, and containerized application with Docker on Linux and Kubernetes on AWS EKS to standardize performance</>
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
                     {
@@ -99,12 +99,8 @@ const about = {
         title: 'Studies',
         institutions: [
             {
-                name: 'University of Jakarta',
+                name: 'University of California, San Diego',
                 description: <>Studied software engineering.</>,
-            },
-            {
-                name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
             }
         ]
     },
