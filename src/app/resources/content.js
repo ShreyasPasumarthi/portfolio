@@ -24,12 +24,12 @@ const social = [
     {
         name: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/once-ui-system/nextjs-starter',
+        link: 'https://github.com/ShreyasPasumarthi',
     },
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
+        link: 'https://www.linkedin.com/in/shreyaspasumarthi/',
     },
     {
         name: 'X',
@@ -39,7 +39,7 @@ const social = [
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:example@gmail.com',
+        link: 'mailto:shreyaspasumarthi@gmail.com',
     },
 ]
 
@@ -72,35 +72,103 @@ const about = {
         description: <>Shreyas is a software engineer with a passion for building products. His work spans machine learning, autonomous systems, and software engineering.</>
     },
     work: {
-        display: true, // set to false to hide this section
+        display: true,
         title: 'Work Experience',
         experiences: [
             {
-                company: 'NASA Jet Propulsion Laboratory',
+                company: 'Autonomy Software Engineer Intern',
                 timeframe: 'June 2024 - September 2024',
-                role: 'Autonomy Simulation Software Engineer Intern',
+                role: 'NASA Jet Propulsion Laboratory',
                 achievements: [
                     <>Cut down simulation runtime by 72.3\% by creating a Python and C++ version of a low-fidelity simulation platform of autonomy algorithms for multi-agent and single-agent robotics missions to asteroids, translating legacy MATLAB code and implementing autonomy algorithms.</>,
                     <>Wrote test plans, created automated CI/CD unit and integration test pipeline using PyTest and Jenkins, and containerized application with Docker on Linux and Kubernetes on AWS EKS to standardize performance</>
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
                     {
-                        src: '/images/projects/project-01/cover-01.jpg',
-                        alt: 'Once UI Project',
+                        src: '/images/projects/project-01/asteroid_muscat.png',
+                        alt: 'Asteroid',
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/project-01/muscat.jpg',
+                        alt: 'Code Organization',
                         width: 16,
                         height: 9
                     }
+                ]
+            },
+            {
+                company: 'Software Engineer Intern',
+                timeframe: 'June 2023 - September 2023',
+                role: 'NASA Jet Propulsion Laboratory',
+                achievements: [
+                    <>Reduced biodiversity assessment time by 50% by developing a novel ML model using an RNN (LSTM) and CNN
+                    for computer vision in SageMaker, predicting biodiversity from multi-modal satellite data with 91.2% accuracy</>,
+                    <>Built a 64.2% faster distributed ETL pipeline to process satellite data with Amazon EMR using Hadoop and Spark</>,
+                    <>Designed an interactive biodiversity web platform, creating a React and D3.js front-end, Amazon RDS MySQL
+                    predictions database, and an optimized serverless REST API back-end with Flask and AWS Lambda, to provide
+                    stakeholders improved and novel biodiversity insights, trend visualizations, and region-specific health scores</>,
+                    <>Conducted A/B testing and customer interviews to refine features, achieving 95% user satisfaction</>,
+                    <>Deployed containerized microservices with Docker on ECS and built a CI/CD pipeline with Jest and Jenkins</>
+                ],
+                images: [ // optional: leave the array empty if you don't want to display images
+                    // {
+                    //     src: '/images/projects/project-01/cover-01.jpg',
+                    //     alt: 'Once UI Project',
+                    //     width: 16,
+                    //     height: 9
+                    // }
+                ]
+            },
+            {
+                company: 'Data Automation Engineer Intern',
+                timeframe: 'June 2023 - September 2023',
+                role: 'NASA Jet Propulsion Laboratory',
+                achievements: [
+                    <>Reduced manual science data processing time for NASA’s OCO-3 instrument on the International Space Station by
+                    53% by accessing downlink data in S3 buckets, log files, and RDS with SQL queries and writing Python scripts with
+                    Pandas to automatically generate QA files, detect anomalies, and determine data sources for preprocessing</>
+                ],
+                images: [ // optional: leave the array empty if you don't want to display images
+                    // {
+                    //     src: '/images/projects/project-01/cover-01.jpg',
+                    //     alt: 'Once UI Project',
+                    //     width: 16,
+                    //     height: 9
+                    // }
+                ]
+            },
+            {
+                company: 'LLM Project Lead Intern',
+                timeframe: 'June 2020 - August 2021',
+                role: 'STEM-Away, Inc.',
+                achievements: [
+                    <>Increased user engagement with suggested posts by 30% on an open-source forum by creating a content
+recommender system using the BERT model in HuggingFace with 87% user approval of suggested posts</>,
+                    <>Served as project lead for team of 15 interns, creating Agile roadmaps, defining user personas, conducting A/B
+testing and interviews to align features with user needs and verify results, and presenting progress to the C-Suite</>,
+                    <>Scraped and parsed user data from forum using BeautifulSoup and used Hadoop to analyze and clean text data</>,
+                    <>Used distillBERT to generate post embeddings and similarity scores and fine-tuned model for next-post prediction</>
+                ],
+                images: [ // optional: leave the array empty if you don't want to display images
+                    // {
+                    //     src: '/images/projects/project-01/cover-01.jpg',
+                    //     alt: 'Once UI Project',
+                    //     width: 16,
+                    //     height: 9
+                    // }
                 ]
             }
         ]
     },
     studies: {
         display: true, // set to false to hide this section
-        title: 'Studies',
+        title: 'Education',
         institutions: [
             {
                 name: 'University of California, San Diego',
-                description: <>Studied software engineering.</>,
+                description: <>B.S. in Mathematics-Computer Science '24</>,
             }
         ]
     },
@@ -109,33 +177,57 @@ const about = {
         title: 'Technical skills',
         skills: [
             {
-                title: 'Figma',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+                title: 'Machine Learning',
+                description: <>Able to train, test, and finetune models in TensorFlow.</>,
                 images: [
-                    {
-                        src: '/images/projects/project-01/cover-02.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                    {
-                        src: '/images/projects/project-01/cover-03.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
+                    // {
+                    //     src: '/images/projects/project-01/cover-02.jpg',
+                    //     alt: 'Project image',
+                    //     width: 16,
+                    //     height: 9
+                    // },
+                    // {
+                    //     src: '/images/projects/project-01/cover-03.jpg',
+                    //     alt: 'Project image',
+                    //     width: 16,
+                    //     height: 9
+                    // }
                 ]
             },
             {
-                title: 'Next.js',
-                description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+                title: 'Full-Stack Development',
+                description: <>Building next gen apps with Next.js, Flask, and React</>,
                 images: [
-                    {
-                        src: '/images/projects/project-01/cover-04.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
+                    // {
+                    //     src: '/images/projects/project-01/cover-04.jpg',
+                    //     alt: 'Project image',
+                    //     width: 16,
+                    //     height: 9
+                    // },
+                ]
+            },
+            {
+                title: 'Data Engineering',
+                description: <>Developing data pipelines with Hadoop, Spark, MapReduce, and cloud services</>,
+                images: [
+                    // {
+                    //     src: '/images/projects/project-01/cover-04.jpg',
+                    //     alt: 'Project image',
+                    //     width: 16,
+                    //     height: 9
+                    // },
+                ]
+            },
+            {
+                title: 'Cloud',
+                description: <>Experienced with GCP, AWS, and Azure</>,
+                images: [
+                    // {
+                    //     src: '/images/projects/project-01/cover-04.jpg',
+                    //     alt: 'Project image',
+                    //     width: 16,
+                    //     height: 9
+                    // },
                 ]
             }
         ]
@@ -151,7 +243,7 @@ const blog = {
 }
 
 const work = {
-    label: 'Work',
+    label: 'Portfolio',
     title: 'My projects',
     description: `Design and dev projects by ${person.name}`
     // Create new project pages by adding a new .mdx file to app/blog/posts
