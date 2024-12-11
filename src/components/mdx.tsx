@@ -1,5 +1,6 @@
+"use client"
 import { MDXRemote, MDXRemoteProps } from 'next-mdx-remote/rsc';
-import React, { ReactNode } from 'react';
+import React, { ReactNode, useEffect, useState } from 'react';
 
 import { SmartImage, SmartLink, Text } from '@/once-ui/components';
 import { CodeBlock } from '@/once-ui/modules';
@@ -141,10 +142,19 @@ type CustomMDXProps = MDXRemoteProps & {
 };
 
 export function CustomMDX(props: CustomMDXProps) {
+    const [mdxContent, setMdxContent] = useState<React.ReactNode>(null);
+
+    useEffect(() => {
+        async function fetchMdx() {
+            const content = await MDXRemote(props);
+            setMdxContent(content);
+        }
+        fetchMdx();
+    }, [props]);
+
     return (
-        <MDXRemote
-            {...props}
-            components={{ ...components, ...(props.components || {}) }}
-        />
+        <>
+            {mdxContent}
+        </>
     );
 }
