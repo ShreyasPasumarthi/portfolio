@@ -47,8 +47,8 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Shreyas Pasumarthi: Software engineer and builder</>,
-    subline: <>I'm Shreyas, a recent UC San Diego graduate, where I studied<br/> Mathematics-Computer Science. I use software engineering and machine learning to create impact.</>
+    headline: <>Shreyas Pasumarthi: Software engineer</>,
+    subline: <>Hi! I'm Shreyas, a recent UC San Diego graduate, where I studied<br/> Mathematics-Computer Science. I use software engineering and machine learning to create impact.</>
 }
 
 const about = {
