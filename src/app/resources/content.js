@@ -9,7 +9,7 @@ const person = {
     role:      'Software Engineer',
     avatar:    '/images/profiletriton.jpg',
     location:  'US/Pacific',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English']  // optional: Leave the array empty if you don't want to display languages
+    languages: ['Python', 'Java', 'C++', 'SQL', 'Javascript', 'HTML', 'CSS', 'MATLAB', 'R', 'Scala']  // optional: Leave the array empty if you don't want to display languages
 }
 
 const newsletter = {
@@ -80,7 +80,7 @@ const about = {
                 timeframe: 'June 2024 - September 2024',
                 role: 'NASA Jet Propulsion Laboratory',
                 achievements: [
-                    <>Cut down simulation runtime by 72.3% by creating a Python and C++ version of a low-fidelity simulation platform of autonomy algorithms for multi-agent and single-agent robotics missions to asteroids, translating legacy MATLAB code and implementing autonomy algorithms.</>,
+                    <>Created a Python and C++ version of a low-fidelity simulation platform of autonomy algorithms for multi-agent and single-agent robotics missions to asteroids, translating legacy MATLAB code and implementing autonomy algorithms.</>,
                     <>Wrote test plans, created automated CI/CD unit and integration test pipeline using PyTest and Jenkins, and containerized application with Docker on Linux and Kubernetes on AWS EKS to standardize performance</>
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
@@ -178,7 +178,7 @@ testing and interviews to align features with user needs and verify results, and
         skills: [
             {
                 title: 'Machine Learning',
-                description: <>Able to train, test, and finetune models in TensorFlow.</>,
+                description: <>Training, testing, and finetuning models in TensorFlow and PyTorch</>,
                 images: [
                     // {
                     //     src: '/images/projects/project-01/cover-02.jpg',

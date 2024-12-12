@@ -1,0 +1,51 @@
+---
+title: "Hermes: Your LLM-Powered Tour Guide"
+publishedAt: "2023-09-27"
+summary: "Web app that uses Gemini to provide tours of destinations around the world"
+images:
+  - "/images/projects/project-02/hermesmap.jpg"
+  - "/images/projects/project-02/hermesui.jpg"
+team:
+  - name: "Shreyas Pasumarthi"
+    role: "Software Engineer"
+    avatar: "/images/profiletriton.jpg"
+    linkedIn: "https://www.linkedin.com/in/shreyaspasumarthi/"
+---
+
+## Inspiration
+
+Have you ever visited a new city and been completely confused on what to do? Traveling can be incredibly confusing, especially for younger travelers or those unfamiliar with the local language. And to top that off, without an expensive or less-than-practical tour guide, learning about the culture and history of cities is challenging. As a frequent traveler, I have experienced this first-hand, often left sitting in beautiful cities scratching my head. I came up with the goal of fixing this problem by providing travelers the historical and cultural knowledge of a tour guide while keeping the independence, flexibility, and accessibility of exploring cities on one's own.
+<br />
+## What Hermes does
+Our app, Hermes, is an AI-powered tour guide that helps you explore the world wherever you want, whenever you want. On your terms and your time. Users enter their current location or a location of their choice anywhere around the world. Then,
+
+
+- **Directions**: Hermes displays interactive directions to five relevant attractions around the user
+- **LLM-powered Narration**: Hermes uses context from Wikipedia and the Gemini 1.5 API to generate cohesive stories about the history and culture of the route and destinations, with a particular focus on telling the stories of marginalized communities
+- **Audio Tours**: Users can play audio of tour information for each destination using ElevenLabs and navigate between each location
+<br />
+
+## How Hermes Was Built
+I built Hermes as a full-stack app using Next.js and Flask. With the Gemini 1.5 API, Google Maps, and ElevenLabs, I was able to create a fully-featured tour guide that works for anywhere in the world.
+
+Google's newest Gemini model was the basis of the application and helped me present information about destinations worldwide. I made use of the 1 million token context window by scraping the web for relevant Wikipedia articles. These articles were often very long and the 1 million token context window allowed me to pass lots of information that would have been too long for the context window of other models to be the basis of the generated tour. The articles were used to generate relevant facts about destinations for the user. Gemini also allowed me to make the content accessible. I added a "kid mode" feature that makes the descriptions fun and simple for travelers of all ages and had Gemini change the response based on the feature. I also added a translate feature to the app. Hermes can now be used in over 40 different languages, allowing people all over the world to connect with the culture and history of cities using the app.
+
+The Google Maps Platform was another incredibly important piece of our app. Our Google Maps integration enabled us to search for tourist attractions relevant to our mission of helping people connect with the history and culture of the world around them and present the five most relevant. I also used the API to display directions from a user's location to each landmark, helping them navigate easily between attractions.
+
+In addition, I used ElevenLabs to transcribe the transcriptions so users can listen to the information about each location as they walk between them. Compared to the native speech-to-text included within the browser, ElevenLabs provided more animate narration, with a David Attenborough-esque voice to bring Hermes additional flair.
+<br />
+
+## Challenges
+
+Bringing all of these powerful tools together proved to be quite the challenge. The ElevenLabs integration was particularly difficult. Keeping the API key strictly server-side required a complicated series of steps. I ended up having the client send a request to the web server, and then using the ElevenLabs SDK to generate the audio. Finally, it would base64 encode the audio and send it back to the client where it could finally be decoded and played.
+The main non-technical challenge was preventing feature creep. The app had so many components and integrations that I had to be strict about every additional feature. To make sure I was on the right track, I reached out to mentors through the Hackathons 101 and Demystifying Product workshops. Consulting with mentors helped me be more critical of the features I chose to build, preventing feature creep. By the end, I focused on providing an excellent experience with the crucial features Hermes needed to help users tour the world in a fun, simple, and culturally-rich manner.
+<br />
+
+## Accomplishments
+I was able to integrate a diverse set of technologies in a simple, cohesive way
+Dinosaur logo :D
+<br />
+
+## What I learned
+
+I got to know the capabilities of LLMs and how to improve their performance and mapping. I also learned how to integrate a wide variety of services efficiently and how to utilize Railway for hosting our Flask server. And most importantly, I learned how to effectively collaborate on a team and have lots of fun in the process :)
