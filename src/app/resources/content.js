@@ -48,7 +48,7 @@ const home = {
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
     headline: <>Shreyas Pasumarthi: Software engineer and builder</>,
-    subline: <>I'm Shreyas, a recent <InlineCode>UC San Diego</InlineCode> graduate, where I studied<br/> Mathematics-Computer Science. After hours, I build my own projects.</>
+    subline: <>I'm Shreyas, a recent UC San Diego graduate, where I studied<br/> Mathematics-Computer Science. I use software engineering and machine learning to create impact.</>
 }
 
 const about = {
@@ -80,7 +80,7 @@ const about = {
                 timeframe: 'June 2024 - September 2024',
                 role: 'NASA Jet Propulsion Laboratory',
                 achievements: [
-                    <>Cut down simulation runtime by 72.3\% by creating a Python and C++ version of a low-fidelity simulation platform of autonomy algorithms for multi-agent and single-agent robotics missions to asteroids, translating legacy MATLAB code and implementing autonomy algorithms.</>,
+                    <>Cut down simulation runtime by 72.3% by creating a Python and C++ version of a low-fidelity simulation platform of autonomy algorithms for multi-agent and single-agent robotics missions to asteroids, translating legacy MATLAB code and implementing autonomy algorithms.</>,
                     <>Wrote test plans, created automated CI/CD unit and integration test pipeline using PyTest and Jenkins, and containerized application with Docker on Linux and Kubernetes on AWS EKS to standardize performance</>
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
