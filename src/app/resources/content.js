@@ -69,7 +69,7 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Shreyas is a software engineer with a passion for building products. His work spans machine learning, autonomous systems, and software engineering.</>
+        description: <>Shreyas is a software engineer with a passion for building products. His work spans machine learning, autonomous systems, and software development.</>
     },
     work: {
         display: true,
