@@ -12,4 +12,32 @@ team:
     linkedIn: "https://www.linkedin.com/in/shreyaspasumarthi/"
 ---
 
-Coming soon!
+
+## Inspiration
+NASA JPL teams need software to plan and test mission concepts for novel satellite missions to asteroids.
+
+<br />
+## What MuSCAT does
+The Multi-Spacecraft Concept and Autonomy Tool (MuSCAT) is a low-fidelity platform for simulating multi-agent and single-agent satellite missions to asteroids and testing autonomy algorithms.
+- **Functional-level Autonomy**: Simulates spacecraft's Navigation, Attitude determination and control, Power, Communication (both direct-to-Earth and inter-spacecraft), Thermal, and Science instruments
+- **System-level Autonomy**: MuSCAT uses NASA's mexec platform for planning and scheduling, a technology used on the Mars Perserverance rover's Onboard Planner
+- **Autonomy Algorithm testing**: MuSCAT can easily simulate a single-spacecraft or multi-spacecraft mission (to Small Body), and prove the mission needs autonomous functions, or can be carried out from the ground
+<br />
+
+## How PyMuSCAT Was Built
+MuSCAT simulations were often time-intensive due to it being built on MATLAB and ROS. The two did not play well together, resulting in simulations taking hours to run. So I built PyMuSCAT, a Python-based version of the platform, to integrate better with ROS.
+I completely refactored the codebase, translating thousands of lines of MATLAB code into Python. 
+<br />
+
+## Challenges
+I had little aerospace engineering experience, let alone the experience needed to simulate satellite dyanamics, so I reached out to my mentor and to the other interns in my group, two Stanford PhD students with aerospace backgrounds, and sought their advice.
+I looked through the codebase to isolate the components with the least dependencies and focused on the most useful and independent part of the code. I built that, learning the aerospace concepts I needed to along the way, and bit by bit, built the platform.
+<br />
+
+## Accomplishments
+I was able to integrate a diverse set of technologies in a cohesive way, reducing runtime by 72.3%. I was also able to build and translate autonomy algorithms to successfully simulate a satellite navigating to an asteroid, which was very exciting.
+<br />
+
+## What I learned
+
+I got to learn about systems engineering, satellite design, aerospace engineering, and how to create simulations in Python and C++. I also learned how to use Docker, Kubernetes, and Jenkins to containerize, deploy, and automatically test code.
