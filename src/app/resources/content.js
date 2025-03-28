@@ -48,7 +48,7 @@ const home = {
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
     headline: <>Shreyas Pasumarthi: Software engineer</>,
-    subline: <>Hi! I'm Shreyas, a recent UC San Diego graduate, where I studied<br/> Mathematics-Computer Science. I use software engineering and machine learning to create impact.</>
+    subline: <>Hi! I'm Shreyas, a M.S. Data Science student at USC and UCSD grad. I use software engineering and machine learning to create impact.</>
 }
 
 const about = {
@@ -75,6 +75,26 @@ const about = {
         display: true,
         title: 'Work Experience',
         experiences: [
+            {
+                company: 'Incoming Data Engineer Intern',
+                timeframe: 'May 2025 - August 2025',
+                role: 'LinkedIn',
+                achievements: [
+                    <>Incoming Data Engineer Intern on the Data Science team at LinkedIn for Summer 2025.</>,
+                ],
+                images: [ // optional: leave the array empty if you don't want to display images
+                ]
+            },
+            {
+                company: 'Software Engineer Intern',
+                timeframe: 'February 2025 - Present',
+                role: 'Noblis',
+                achievements: [
+                    <>Developing path planning approaches for multi-agent drone swarms and advanced targeting algorithms for land weapons to optimally neutralize swarms using reinforcement learning.</>,
+                ],
+                images: [ // optional: leave the array empty if you don't want to display images
+                ]
+            },
             {
                 company: 'Autonomy Software Engineer Intern',
                 timeframe: 'June 2024 - September 2024',
